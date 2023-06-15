@@ -1,19 +1,19 @@
 
 <?php
 if(isset($_POST['submit'])){
-$nombre = "nombre:".$_POST['nombre']."
+$nombre = "Nombre:              ".$_POST['nombre']."
 ";
-$apellido = "apellido:".$_POST['apellido']."
+$apellido = "Apellido:            ".$_POST['apellido']."
 ";
-$email = "email:".$_POST['email']."
+$email = "Email:               ".$_POST['email']."
 ";
-$edad = "edad:".$_POST['edad']."
+$edad = "Edad:                ".$_POST['edad']."
 ";
-$nivelEstudio = "nivelEstudio:".$_POST['nivelEstudio']."
+$nivelEstudio = "Nivel de Estudio:   ".$_POST['nivelEstudio']."
 ";
-$listaCurso = "listaCurso:".$_POST['listaCurso']."
+$listaCurso = "Curso Interesado:   ".$_POST['listaCurso']."
 ";
-$masInfo = "masInfo:".$_POST['masInfo']."
+$masInfo = "Recibir Informacion: ".$_POST['masInfo']."
 ";
 
 $file=fopen("C:\Users\ADMIN\Desktop\datos.txt", "a");
