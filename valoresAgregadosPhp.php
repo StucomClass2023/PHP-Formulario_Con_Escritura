@@ -5,7 +5,7 @@
         }  $stylesheet_url = "./estilos/estilos.css"; 
     
         include_once("./formularioPhp.php");
-        include("./escritura.php");
+        include_once("./escritura.php");
 
         echo $nombre;
         echo "<br>";

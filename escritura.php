@@ -16,16 +16,25 @@ $listaCurso = "Curso Interesado:   ".$_POST['listaCurso']."
 $masInfo = "Recibir Informacion: ".$_POST['masInfo']."
 ";
 
-$file=fopen("C:\Users\ADMIN\Desktop\datos.txt", "a");
-fwrite($file, PHP_EOL . "*************************" . PHP_EOL);
-fwrite($file, $nombre);
-fwrite($file, $apellido);
-fwrite($file, $email);
-fwrite($file, $edad);
-fwrite($file, $nivelEstudio);
-fwrite($file, $listaCurso);
-fwrite($file, $masInfo);
-fwrite($file, PHP_EOL . "*************************");
-fclose($file);
+$datos=fopen(".\datos.txt", "a") or 
+die("Problemas con la creacion");
+fwrite($datos, PHP_EOL . "************************************" . PHP_EOL);
+fwrite($datos, $nombre);
+fwrite($datos, $apellido);
+fwrite($datos, $email);
+fwrite($datos, $edad);
+fwrite($datos, $nivelEstudio);
+fwrite($datos, $listaCurso);
+fwrite($datos, $masInfo);
+fwrite($datos, PHP_EOL . "************************************");
+fclose($datos);
+
+$lectura = fopen("./datos.txt", "r") or 
+die("No se pudo leer el archivo!");
+//echo fread($lectura,filesize("./datos.txt"));
+while(!feof($lectura)) {
+    echo fgets($lectura) . "<br>";
+  }
+fclose($lectura);
 }
 ?>

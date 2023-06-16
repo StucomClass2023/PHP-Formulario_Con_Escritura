@@ -33,7 +33,7 @@
                   <fieldset>
                     <label for="apellido" id="apellido">
                       Apellido: 
-                      <input class="" type="text" id="apellido" name="apellido" value="<?php echo $apellido;?>" 
+                      <input class="" type="text" id="apellido" name="apellido" value=" <?php echo $apellido;?>" 
                       placeholder="OBLIGATORIO" required>
                       <span class="error">* 
                         <?php echo $apellidoErr;?>
@@ -43,7 +43,7 @@
                   <fieldset>
                     <label for="email" id="email">
                       E-mail:
-                      <input class="" type="email" id="email" name="email" value="<?php echo $email;?>" 
+                      <input class="" type="email" id="email" name="email" value=" <?php echo $email;?>" 
                       placeholder="OBLIGATORIO" required />
                       <span class="error">
                         * 
@@ -55,7 +55,7 @@
                     <label for="number" id="edad">
                       Edad:
                       <input class="" type="number" id="edad" name="edad" min="16" max="112" 
-                        value="<?php echo $edad;?>" placeholder="OBLIGATORIO" required />
+                        value=" <?php echo $edad;?>" placeholder="OBLIGATORIO" required />
                       <span class="error">
                         <?php echo $edadErr;?>*
                       </span>
@@ -67,15 +67,15 @@
                     </div>
                     <label class="m-b-xs">
                       <input type="radio" name="nivelEstudio" <?php if (isset($nivelEstudio) 
-                          && $nivelEstudio=="basico") echo "checked";?> value="basico">Basico
+                          && $nivelEstudio=="basico") echo "checked";?> value=" Basico">Basico
                     </label>
                     <label class="m-b-xs">
                       <input type="radio" name="nivelEstudio" <?php if (isset($nivelEstudio) 
-                          && $nivelEstudio=="universitario") echo "checked";?> value="universitario">Universitario
+                          && $nivelEstudio=="universitario") echo "checked";?> value=" Universitario">Universitario
                     </label>
                     <label class="m-b-xs">
                       <input type="radio" name="nivelEstudio" <?php if (isset($nivelEstudio) 
-                          && $nivelEstudio=="otro") echo "checked";?> value="otro">Otro  
+                          && $nivelEstudio=="otro") echo "checked";?> value=" Otro">Otro  
                     </label>
                     <span class="error">* <?php echo $nivelEstudioErr;?></span>
                  </fieldset>                  
@@ -84,13 +84,13 @@
                       Cursos disponibles:
                        <select id="listaCurso" name="listaCurso" class="m-t-xs">
                        <option value="">--- Escoge un nivel de estudio. ---</option>
-                        <option value="basico" <?php if (isset($listaCurso) 
+                        <option value=" Basico" <?php if (isset($listaCurso) 
                           && $listaCurso=="basico") echo "checked";?>>Basico</option>
-                        <option value="universitario" <?php if (isset($listaCurso) 
+                        <option value=" Universitario" <?php if (isset($listaCurso) 
                           && $listaCurso=="universitario") echo "checked";?>>Universitario</option>
-                        <option value="doctorado" <?php if (isset($listaCurso) 
+                        <option value=" Doctorado" <?php if (isset($listaCurso) 
                           && $listaCurso=="doctorado") echo "checked";?>>Doctorado</option>
-                        <option value="otro" <?php if (isset($listaCurso) 
+                        <option value=" Otro" <?php if (isset($listaCurso) 
                           && $listaCurso=="otro") echo "checked";?>>Otro</option>
                        </select>
                     </label>
@@ -99,11 +99,11 @@
                   <fieldset>          
                     <label class="m-b-xs">                      
                       <input type="radio" name="masInfo" <?php if (isset($masInfo) 
-                          && $masInfo=="siInfo") echo "checked";?> value="siInfo">Deseo mas informacion via correo electronico.
+                          && $masInfo=="siInfo") echo "checked";?> value="Mas informacion.">Deseo mas informacion via correo electronico.
                     </label> 
                     <label class="m-b-xs"> 
                       <input type="radio" name="masInfo" <?php if (isset($masInfo) 
-                          && $masInfo=="noInfo") echo "checked";?> value="noInfo">No deseo mas informacion.   
+                          && $masInfo=="noInfo") echo "checked";?> value="No mas informacion.">No deseo mas informacion.   
                     </label>  
                     <span class="error">* <?php echo $masInfoErr;?></span>
                  </fieldset>                   
