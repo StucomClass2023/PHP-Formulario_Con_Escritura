@@ -28,13 +28,5 @@ fwrite($datos, $listaCurso);
 fwrite($datos, $masInfo);
 fwrite($datos, PHP_EOL . "************************************");
 fclose($datos);
-
-$lectura = fopen("./datos.txt", "r") or 
-die("No se pudo leer el archivo!");
-//echo fread($lectura,filesize("./datos.txt"));
-while(!feof($lectura)) {
-    echo fgets($lectura) . "<br>";
-  }
-fclose($lectura);
 }
 ?>

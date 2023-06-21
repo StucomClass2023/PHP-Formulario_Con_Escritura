@@ -51,6 +51,7 @@
           $listaCurso = "Se require seleccionar un Curso!";
         } else {
           $listaCurso = test_input($_POST["listaCurso"]);
+          
         }if (empty($_POST["masInfo"])) {
         $masInfo = "No se requiere mas informacion";
         } else {

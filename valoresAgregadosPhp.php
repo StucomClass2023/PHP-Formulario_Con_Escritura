@@ -1,12 +1,12 @@
 
-    <?php
-        function linkResource($rel, $href) {
+    <?php    
+
+    function linkResource($rel, $href) {
         echo "<link rel='{$rel}' href='{$href}'>";
-        }  $stylesheet_url = "./estilos/estilos.css"; 
-    
+        }  
         include_once("./formularioPhp.php");
         include_once("./escritura.php");
-
+       
         echo $nombre;
         echo "<br>";
         echo $apellido;
@@ -21,4 +21,7 @@
         echo "<br>";
         echo $masInfo;
         echo "<br>";
+
+        include_once("./lectura.php");
+        
     ?>
